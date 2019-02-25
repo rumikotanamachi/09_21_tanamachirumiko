@@ -3,7 +3,7 @@
 session_start();
 
 //0.外部ファイル読み込み
-include('functions.php');
+include('user_functions.php');
 
 // ログイン状態のチェック
 // chk_ssid();
@@ -26,7 +26,7 @@ if ($status==false) {
     while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
         $view .= '<li class="list-group-item">';
         $view .= '<p>'.$result['deadline'].'-'.$result['task'].'</p>';
-        $view .= '<a href="detail_nologin.php?id='.$result[id].'" class="badge badge-primary">Edit</a>';
+        $view .= '<a href="detail_nologin.php?id='.$result[id].'" class="badge badge-primary">detail</a>';
         $view .= '</li>';
     }
 }
@@ -61,7 +61,7 @@ if ($status==false) {
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                     <?=$menu?> 
+                    <?=$menu?>
                 </ul>
             </div>
         </nav>

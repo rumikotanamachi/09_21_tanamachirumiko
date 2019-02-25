@@ -1,3 +1,9 @@
+<?php
+include('user_functions.php');
+
+$menu = menu();
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -19,32 +25,18 @@
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">ログイン管理</a>
+            <a class="navbar-brand" href="#">user登録</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="user_index.php">ユーザー追加</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="user_select.php">ユーザー一覧</a>
-                    </li>
+                    <?=$menu?>
                 </ul>
             </div>
         </nav>
     </header>
-    <div>
-    <h3>管理者</h3>
-    <input type="radio" name="hyouka" value="" checked="checked">一般
-    <input type="radio" name="hyouka" value="" >管理者
-    </div>
-    <div>
-    <h3>会員登録</h3>
-    <input type="radio" name="hyouka" value="" checked="checked">アクティブ
-    <input type="radio" name="hyouka" value="" >非アクティブ
-    </div>
     <form method="post" action="user_insert.php">
         <div class="form-group">
             <label for="name">名前</label>

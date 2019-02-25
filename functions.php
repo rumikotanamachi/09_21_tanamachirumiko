@@ -37,8 +37,6 @@ $_SESSION['chk_ssid'] = session_id();
 function menu()
 {
     $menu = '<li class="nav-item"><a class="nav-link" href="index.php">todo登録</a></li><li class="nav-item"><a class="nav-link" href="select.php">todo一覧</a></li>';
-    $menu .= '<li class="nav-item"><a class="nav-link" href="user_index.php">user登録</a></li>';
-    $menu .= '<li class="nav-item"><a class="nav-link" href="user_detail.php">user管理</a></li>';
     $menu .= '<li class="nav-item"><a class="nav-link" href="logout.php">ログアウト</a></li>';
     return $menu;
 }

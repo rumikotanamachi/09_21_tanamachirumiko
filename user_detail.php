@@ -55,17 +55,23 @@ if ($status==false) {
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">ログイン管理</a>
+            <a class="navbar-brand" href="#">user更新</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="user_index.php">ユーザー追加</a>
+                        <a class="nav-link" href="index.php">todo登録</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="user_select.php">ユーザー一覧</a>
+                        <a class="nav-link" href="select.php">todo一覧</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="user_index.php">user登録</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="user_select.php">user管理</a>
                     </li>
                 </ul>
             </div>
@@ -87,7 +93,7 @@ if ($status==false) {
             <input type="text" class="form-control" id="lpw" name="lpw" value="<?=$rs['lpw']?>">
         </div>
         <div class="form-group">
-            <button type="submit" class="btn btn-primary">登録</button>
+            <button type="submit" class="btn btn-primary">submit</button>
         </div>
     </form>
         <!-- idは変えたくない = ユーザーから見えないようにする-->

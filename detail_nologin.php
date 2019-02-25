@@ -3,7 +3,7 @@
 session_start();
 
 //0.外部ファイル読み込み
-include('functions.php');
+include('user_functions.php');
 
 // ログイン状態のチェック
 chk_ssid();
@@ -70,15 +70,15 @@ if ($status==false) {
     <form method="post" action="update.php">
         <div class="form-group">
             <label for="task">Task</label>
-            <input type="text" class="form-control" id="task" name="task" placeholder="Enter task" value="<?=$rs['task']?>">
+            <input type="text" class="form-control" id="task" name="task" placeholder="Enter task" value="<?=$rs['task']?>"readonly>
         </div>
         <div class="form-group">
             <label for="deadline">Deadline</label>
-            <input type="date" class="form-control" id="deadline" name="deadline" value="<?=$rs['deadline']?>">
+            <input type="date" class="form-control" id="deadline" name="deadline" value="<?=$rs['deadline']?>"readonly>
         </div>
         <div class="form-group">
             <label for="comment">Comment</label>
-            <textarea class="form-control" id="comment" name="comment" rows="3"><?=$rs['comment']?></textarea>
+            <textarea class="form-control" id="comment" name="comment" rows="3"readonly><?=$rs['comment']?></textarea>
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-primary">Submit</button>

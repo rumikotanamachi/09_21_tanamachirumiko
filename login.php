@@ -28,12 +28,25 @@
                     <li class="nav-item">
                         <a class="nav-link" href="login.php">ログインページ</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="select_nologin.php">一覧ページ</a>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <form method="post" action="login_act.php">
+    <!-- <div>
+    <h3>管理者</h3>
+    <input type="radio" name="kanri" value="0" checked="checked">管理者
+    <input type="radio" name="kanri" value="1" >一般
+    </div>
+    <div>
+    <h3>会員登録</h3>
+    <input type="radio" name="user" value="1" checked="checked">登録済み
+    <input type="radio" name="user" value="1" >未登録
+    </div> -->
         <div class="form-group">
             <label for="lid">LoginID</label>
             <input type="text" class="form-control" id="lid" name="lid">

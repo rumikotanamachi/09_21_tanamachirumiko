@@ -14,8 +14,8 @@ if (
 $name = $_POST['name'];
 $lid = $_POST['lid'];
 $lpw = $_POST['lpw'];
-$kanri_flg = 0;
-$life_flg = 0;
+$kanri_flg = $_POST['kanri_flg'];
+$life_flg = $_POST['life_flg'];
 
 $pdo = db_conn();//←関数実行
 

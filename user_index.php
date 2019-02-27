@@ -37,7 +37,13 @@ $menu = menu();
             </div>
         </nav>
     </header>
-    <form method="post" action="user_insert.php">
+<form method="post" action="user_insert.php">
+    <div>
+        <p>
+        <input type="radio" name="kanri_flg" value="0" checked="checked">一般
+        <input type="radio" name="kanri_flg" value="1">管理者
+        </p>    
+    </div>
         <div class="form-group">
             <label for="name">名前</label>
             <input type="text" class="form-control" id="name" name="name" >
@@ -53,6 +59,12 @@ $menu = menu();
         <div class="form-group">
             <button type="submit" class="btn btn-primary">登録</button>
         </div>
+    <div>
+        <p>
+        <input type="radio" name="life_flg" value="0" checked="checked">
+        <input type="radio" name="life_flg" value="1">
+        </p>    
+    </div>
     </form>
 
 </body>

@@ -6,7 +6,7 @@ session_start();
 include('user_functions.php');
 
 // ログイン状態のチェック
-chk_ssid();
+// chk_ssid();
 
 $menu = menu();
 

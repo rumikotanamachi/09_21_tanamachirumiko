@@ -3,7 +3,7 @@
 session_start();
 
 //0.外部ファイル読み込み
-include('user_functions.php');
+include('functions.php');
 
 // ログイン状態のチェック
 // chk_ssid();

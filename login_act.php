@@ -33,14 +33,19 @@ $val = $stmt->fetch();
 if ($val['id'] != '') {
     // ログイン成功の場合はセッション変数に値を代入
 
-$_SESSION = array(); 
-$_SESSION['chk_ssid'] = session_id();
-$_SESSION['kanri_flg'] = $val['kanri_flg'];
-$_SESSION['name'] = $val['name']; 
-     header('Location: select.php');
-} else {
-    //ログイン失敗の場合はログイン画面へ戻る
-    header('Location: login.php');
+    $_SESSION = array(); 
+    $_SESSION['chk_ssid'] = session_id();
+    $_SESSION['kanri_flg'] = $val['kanri_flg'];
+    $_SESSION['name'] = $val['name']; 
+    if($_SESSION['kanri_flg']==1){
+        header('Location: user_index.php');
+    } else {
+        header('Location: index.php');
+    }
+}
+else{
+        header('Location: login.php');
 }
 
 exit();
+

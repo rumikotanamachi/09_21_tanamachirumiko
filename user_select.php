@@ -24,6 +24,8 @@ if ($status==false) {
         $view .= '</li>';
     }
 }
+
+$menu = menu();
 ?>
 
 
@@ -54,12 +56,7 @@ if ($status==false) {
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="user_index.php">ユーザー追加</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="user_select.php">ユーザー一覧</a>
-                    </li>
+                    <?=$menu?>
                 </ul>
             </div>
         </nav>

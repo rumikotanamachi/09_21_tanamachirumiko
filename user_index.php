@@ -59,7 +59,7 @@ $menu = menu();
         <div class="form-group">
             <button type="submit" class="btn btn-primary">登録</button>
         </div>
-    <div>
+    <div class="c">
         <p>
         <input type="radio" name="life_flg" value="0" checked="checked">
         <input type="radio" name="life_flg" value="1">
